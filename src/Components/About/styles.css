@@ -1,0 +1,183 @@
+.aboutContainer {
+  min-height: 90vh;
+  width: 100%;
+  padding-top: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutContainer .headingText {
+  margin-left: 5vw;
+}
+
+.aboutContainer .headingText .top,
+.aboutContainer .headingText .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutContainer .headingText .top .h1,
+.aboutContainer .headingText .bottom .h1 {
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-family: "Prata", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.aboutContainer .headingText .top .line,
+.aboutContainer .headingText .bottom .line {
+  margin: 0 0.25rem;
+  height: 1px;
+  width: clamp(0.5rem, 0.5vw, 10.5rem);
+  background-color: var(--font-hover);
+}
+
+.aboutContainer .headingText .top .lineBtm,
+.aboutContainer .headingText .bottom .lineBtm {
+  margin: 0 0.25rem;
+  height: 1px;
+  width: clamp(2rem, 0.5vw, 10.5rem);
+  background-color: var(--font-hover);
+}
+
+.aboutContainer .contentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 5vw;
+}
+
+.aboutContainer .contentWrapper .picText {
+  cursor: pointer;
+}
+
+.aboutContainer .contentWrapper .picText .ceoText {
+  text-align: center;
+  font-family: var(--white-font);
+}
+
+.aboutContainer .contentWrapper .picText .extraHeading {
+  margin-top: 5vw;
+  margin-left: 0;
+  border: 1px solid black;
+  padding: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.aboutContainer .contentWrapper .picText .Pic {
+  width: clamp(10rem, 25vw, 20rem);
+}
+
+.aboutContainer .contentWrapper .picText .text {
+  margin-top: 2rem;
+}
+
+.aboutContainer .contentWrapper .picText .line2 {
+  margin: 0 0.25rem;
+  height: 1px;
+  width: clamp(3rem, 0.5vw, 5rem);
+  background-color: var(--font-hover);
+}
+
+.aboutContainer .contentWrapper .picText .line12 {
+  margin: 0 0.25rem;
+  height: 1px;
+  width: clamp(1rem, 0.5vw, 1.5rem);
+  background-color: var(--font-hover);
+}
+
+.aboutContainer .contentWrapper .picText :hover {
+  border-color: var(--p-color);
+}
+
+.aboutContainer .contentWrapper .picText :hover .h1,
+.aboutContainer .contentWrapper .picText :hover .lin {
+  color: var(--p-color);
+}
+
+.aboutContainer .contentWrapper .textOnly .para {
+  text-align: center;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  color: var(--p-color);
+  font-family: var(--p-font);
+  width: 100%;
+  margin: 1rem 0;
+  font-weight: lighter;
+}
+
+.aboutContainer .contentWrapper .textOnly .lists {
+  margin: 0;
+  padding: 0;
+}
+
+.aboutContainer .contentWrapper .textOnly .lists .list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutContainer .contentWrapper .textOnly .lists .list p {
+  margin: 0;
+  padding: 0;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  color: var(--p-color);
+  font-family: var(--p-font);
+  font-weight: bold;
+}
+
+.aboutContainer .contentWrapper .textOnly .lists .list .circle {
+  margin: 0 0.5rem;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--p-color);
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 550px) {
+  .aboutContainer .contentWrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 1rem;
+  }
+  .aboutContainer .contentWrapper .textOnly {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .aboutContainer .contentWrapper {
+    margin: 5vw;
+  }
+}

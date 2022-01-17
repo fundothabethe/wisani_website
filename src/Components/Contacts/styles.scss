@@ -1,0 +1,192 @@
+.contactsContainer {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  .extraHeading {
+    margin: 2rem auto;
+    .h1 {
+      margin-bottom: 0;
+      font-weight: lighter;
+      font-family: "Prata", sans-serif;
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+    }
+    .top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .line2 {
+        margin: 0 0.25rem;
+        height: 1px;
+        width: clamp(3rem, 0.5vw, 5rem);
+        background-color: var(--font-hover);
+      }
+      .line12 {
+        margin: 0 0.25rem;
+        height: 1px;
+        width: clamp(4rem, 4vw, 10rem);
+        background-color: var(--font-hover);
+      }
+    }
+  }
+  .contactWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 60%;
+    .formContainer {
+      margin-right: 0.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .formBig {
+        flex: 1;
+        display: none;
+        flex-direction: column;
+        margin-top: 1rem;
+        .rowView {
+          display: flex;
+          align-items: center;
+          input {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: clamp(0.75rem, 2.5vw, 1rem);
+            margin: 0.125rem;
+            border: 1px solid var(--p-color);
+            border-radius: 3px;
+          }
+          input:active {
+            border: 1px solid var(--p-color);
+          }
+        }
+        textarea {
+          margin: 0.5rem 0;
+          text-align: center;
+          font-size: clamp(0.75rem, 2.5vw, 1rem);
+        }
+      }
+      @media screen and (min-width: 700px) {
+        .formBig {
+          display: flex;
+        }
+      }
+    }
+
+    .divideLine {
+      display: none;
+      background-color: black;
+      margin: 0 0.25rem;
+      width: 1px;
+    }
+    @media screen and (min-width: 700px) {
+      .divideLine {
+        display: block;
+      }
+    }
+    .conatctLinks {
+      flex: 1;
+    }
+    .displayNone {
+      .linksHere {
+        border-top: 0.1px solid var(--p-color);
+        border-bottom: 1px solid var(--p-color);
+        width: fit-content;
+        min-width: 50%;
+        margin: 1rem;
+        .oneLink {
+          display: flex;
+          align-items: center;
+          margin: 0.5rem 0;
+          text-decoration: none;
+          cursor: pointer;
+          width: fit-content;
+          img {
+            margin-right: 0.5rem;
+          }
+          p {
+            text-decoration: underline;
+            margin: 0;
+            font-family: var(--p-font);
+            color: var(--p-color);
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 699px) {
+      .displayNone {
+        display: none;
+      }
+    }
+  }
+
+  .formLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+
+    .formSmall {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      input {
+        padding: 0.5rem;
+        font-size: clamp(0.75rem, 2.5vw, 1rem);
+        margin-bottom: 0.125rem;
+        border: 1px solid var(--p-color);
+        border-radius: 3px;
+      }
+      input:active {
+        border: 1px solid var(--p-color);
+      }
+
+      textarea {
+        margin: 0.5rem 0;
+        text-align: center;
+        font-size: clamp(0.75rem, 2.5vw, 1rem);
+      }
+    }
+    .linkSmall {
+      display: flex;
+      justify-content: space-evenly;
+      align-self: flex-start;
+      flex-direction: column;
+      flex: 0.2;
+      margin-left: 0.5rem;
+      img {
+        width: 20px;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .small {
+      display: none;
+    }
+    .contactWrapper {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  }
+  .messageSent {
+    display: none;
+    margin: 2vw 5vw;
+    padding: 0 0.25rem;
+    text-align: center;
+    font-family: var(--p-font);
+    font-size: clamp(0.75rem, 2.5vw, 1rem);
+    border-radius: 3px;
+    background-color: #00ff0054;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contactsContainer {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+
+.landing_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  width: 100%;
+  background-color: var(--landing-color);
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+
+  .slideShow {
+    max-height: 50vh;
+    width: 100vw;
+  }
+
+  .slideTexts {
+    background-color: rgba(229, 204, 200, 0.6);
+    .slideText {
+      font-size: clamp(1rem, 2vw, 1.5em) !important;
+      color: var(--gray-color);
+      font-family: var(--p-font);
+      margin-left: 3vw;
+      text-align: center;
+    }
+  }
+  .session {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: 0 30%;
+  }
+
+  .headingAndText {
+    .left {
+      .landingHeading {
+        margin: 0;
+        font-family: var(--h1-font);
+        font-size: clamp(1.25rem, 4vw, 2rem);
+        color: var(--gray-color);
+        font-weight: lighter;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .landingList {
+        z-index: 1;
+        margin: 1vh auto;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        .LandingItems {
+          font-family: var(--p-font);
+          font-size: clamp(0.75rem, 3vw, 1rem);
+
+          color: var(--h2-color);
+        }
+        .circle {
+          width: 5px;
+          margin: 0 0.25rem;
+          height: 5px;
+          background-color: var(--gray-color);
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .para {
+      font-size: clamp(0.85em, 2vw, 1em) !important;
+      color: var(--gray-color);
+      font-family: var(--p-font);
+      text-align: center;
+      width: fit-content;
+      margin: 0 auto;
+    }
+    a {
+      text-decoration: none;
+      width: fit-content;
+      z-index: 1;
+      text-align: center;
+      height: fit-content;
+      display: block;
+      margin: auto;
+    }
+    .h3 {
+      text-align: center;
+      margin: auto;
+      z-index: 1;
+      color: white;
+      background-color: black;
+      width: fit-content;
+      padding: 0.25rem 0.5rem;
+      font-size: clamp(0.75rem, 3vw, 1.25rem);
+      font-weight: lighter;
+      border-radius: 7px;
+      cursor: pointer;
+      font-family: "Oranienbaum", serif;
+    }
+    .h3:hover {
+      color: rgb(207, 207, 207);
+      background-color: black;
+    }
+  }
+  .down {
+    position: absolute;
+    left: 50vw;
+    border-radius: 50%;
+    border: 1px solid var(--gray-color);
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 800px) {
+  .landing_container {
+    display: block;
+    .imgAnime {
+      .session {
+        height: 50vh;
+      }
+    }
+  }
+}

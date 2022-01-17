@@ -1,0 +1,99 @@
+.aboutWrapper {
+  position: relative;
+  padding-top: 10vh;
+}
+
+.aboutWrapper .Alltext .aboutHeading {
+  text-align: center;
+}
+
+.aboutWrapper .Alltext .aboutHeading .high,
+.aboutWrapper .Alltext .aboutHeading .low {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutWrapper .Alltext .aboutHeading .high .h1,
+.aboutWrapper .Alltext .aboutHeading .high h2,
+.aboutWrapper .Alltext .aboutHeading .low .h1,
+.aboutWrapper .Alltext .aboutHeading .low h2 {
+  margin: 0rem;
+  font-weight: lighter;
+  font-family: "Prata", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.aboutWrapper .Alltext .aboutHeading .high .lineTop,
+.aboutWrapper .Alltext .aboutHeading .low .lineTop {
+  margin: 0 0.25rem;
+  height: 1px;
+  width: clamp(0.5rem, 0.5vw, 10.5rem);
+  background-color: var(--font-hover);
+}
+
+.aboutWrapper .Alltext .aboutHeading .high .Btm,
+.aboutWrapper .Alltext .aboutHeading .low .Btm {
+  margin: 0 0.25rem;
+  height: 1px;
+  width: clamp(2rem, 0.5vw, 10.5rem);
+  background-color: var(--font-hover);
+}
+
+@media screen and (min-width: 700px) {
+  .aboutWrapper .Alltext .wrapText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutWrapper .Alltext .wrapText .para,
+  .aboutWrapper .Alltext .wrapText p,
+  .aboutWrapper .Alltext .wrapText li {
+    padding: 0 1rem;
+  }
+}
+
+.aboutWrapper .Alltext .wrapText {
+  margin: 0 5vw;
+}
+
+.aboutWrapper .Alltext .wrapText .para,
+.aboutWrapper .Alltext .wrapText p {
+  text-align: left;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  color: var(--p-color);
+  font-family: var(--p-font);
+  width: 100%;
+  margin: 1rem 0;
+  font-weight: lighter;
+}
+
+.aboutWrapper .Alltext .wrapText h2,
+.aboutWrapper .Alltext .wrapText h4 {
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-family: "Prata", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.aboutWrapper .Alltext .wrapText ul {
+  padding: 0;
+  margin: 0;
+}
+
+.aboutWrapper .Alltext .wrapText ul li {
+  text-align: left;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  color: var(--p-color);
+  font-family: var(--p-font);
+  width: 100%;
+  margin: 0;
+  font-weight: bold;
+}

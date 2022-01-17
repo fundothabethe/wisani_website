@@ -1,0 +1,168 @@
+.servicesContainer {
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5vw;
+    .text {
+      margin-top: 1rem;
+      width: fit-content;
+      width: 100%;
+      .rowText {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .h1 {
+          margin-bottom: 0;
+          font-weight: lighter;
+          font-family: "Prata", sans-serif;
+          font-size: clamp(1rem, 3vw, 2.5rem);
+        }
+        .line {
+          height: 1px;
+          width: clamp(1rem, 2.5vw, 10.5rem);
+          background-color: var(--font-hover);
+        }
+      }
+    }
+    .para {
+      text-align: center;
+      font-size: clamp(0.85rem, 2.5vw, 1rem);
+      color: var(--p-color);
+      font-family: var(--p-font);
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    .problemsText {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      @media screen and (max-width: 320px) {
+        .problems {
+          flex-wrap: wrap;
+        }
+      }
+
+      .problems {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .problemsList {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          max-width: 130px;
+
+          .h3 {
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 0.25rem 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            border-radius: 7px;
+            cursor: pointer;
+          }
+          .h3:hover {
+            color: rgb(207, 207, 207);
+            background-color: black;
+          }
+        }
+        .stress1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .session1 {
+            width: 20vh;
+            height: 20vh;
+            object-fit: cover;
+            margin-top: 3rem;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+          }
+        }
+        @media screen and (min-width: 300px) {
+          .stress1 {
+            display: none;
+          }
+        }
+        @media screen and (min-width: 320px) {
+          .problemsList {
+            padding: 0 1%;
+          }
+        }
+      }
+      .boldText {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: clamp(1.5rem, 2.5vw, 4rem);
+        font-family: "Rosarivo", serif;
+      }
+      @media screen and (min-width: 400px) {
+        .boldText {
+          font-size: 5vw;
+        }
+      }
+    }
+    @media screen and (max-width: 320px) {
+      .problemsText {
+        display: block;
+        width: 100%;
+        .problem {
+          justify-content: space-between;
+          flex-wrap: nowrap;
+        }
+      }
+    }
+    @media screen and (min-width: 700px) {
+      .problemsText {
+        .problems {
+          flex: 1;
+        }
+        flex-wrap: nowrap;
+        .boldText {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .stress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .session {
+      width: 20vh;
+      height: 20vh;
+      object-fit: cover;
+      margin-top: 3rem;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .stress {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .stress {
+      margin-right: 10vh !important;
+      .session {
+        width: 20vw;
+        height: 20vw;
+      }
+    }
+  }
+  @media screen and (min-width: 400px) {
+    .stress {
+      margin-right: 5vw;
+    }
+  }
+}

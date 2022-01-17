@@ -1,0 +1,54 @@
+.apointWrapper {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10vh 0;
+  width: 100%;
+  .form {
+    // flex: 1;
+    .calender {
+      position: relative;
+    }
+    .rdrMonth {
+      position: static;
+    }
+    .messageSent {
+      display: none;
+      margin: 2vw 5vw;
+      padding: 0 0.25rem;
+      text-align: center;
+      font-family: var(--p-font);
+      font-size: clamp(0.85rem, 2.5vw, 1rem);
+      border-radius: 3px;
+      background-color: #00ff0054;
+    }
+  }
+  .costs {
+    // flex: 1;
+    z-index: 2;
+    width: 30%;
+    align-self: flex-start;
+  }
+  .or {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .apointWrapper {
+    flex-direction: column;
+    .costs {
+      // flex: 1;
+      margin: 2rem;
+      width: 90%;
+      align-self: center;
+      .mark {
+        background-color: aquamarine !important;
+        padding: 0.05rem 0.125rem;
+        border-radius: 7px;
+        font-weight: bold;
+      }
+    }
+  }
+}

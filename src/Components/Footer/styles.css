@@ -1,0 +1,70 @@
+.footer {
+  background: var(--landing-color);
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .sitemap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .sitemap img {
+  margin: 2rem 0;
+  width: clamp(5rem, 10vw, 10rem);
+}
+
+.footer .sitemap .siteInfo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .sitemap .siteInfo .operating h3 {
+  text-align: center;
+  font-family: var(--p-font);
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.footer .sitemap .siteInfo .operating p {
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  margin-bottom: 0.125rem;
+  color: var(--gray-color);
+}
+
+.footer p {
+  text-align: center;
+  margin: 0;
+  font-family: var(--p-font);
+  color: var(--p-color);
+}

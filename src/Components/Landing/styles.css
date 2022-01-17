@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+.landing_container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10vh;
+  width: 100%;
+  background-color: var(--landing-color);
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.landing_container .slideShow {
+  max-height: 50vh;
+  width: 100vw;
+}
+
+.landing_container .slideTexts {
+  background-color: rgba(229, 204, 200, 0.6);
+}
+
+.landing_container .slideTexts .slideText {
+  font-size: clamp(1rem, 2vw, 1.5em) !important;
+  color: var(--gray-color);
+  font-family: var(--p-font);
+  margin-left: 3vw;
+  text-align: center;
+}
+
+.landing_container .session {
+  width: 100vw;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 30%;
+     object-position: 0 30%;
+}
+
+.landing_container .headingAndText .left .landingHeading {
+  margin: 0;
+  font-family: var(--h1-font);
+  font-size: clamp(1.25rem, 4vw, 2rem);
+  color: var(--gray-color);
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.landing_container .headingAndText .left .landingList {
+  z-index: 1;
+  margin: 1vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.landing_container .headingAndText .left .landingList .LandingItems {
+  font-family: var(--p-font);
+  font-size: clamp(0.75rem, 3vw, 1rem);
+  color: var(--h2-color);
+}
+
+.landing_container .headingAndText .left .landingList .circle {
+  width: 5px;
+  margin: 0 0.25rem;
+  height: 5px;
+  background-color: var(--gray-color);
+  border-radius: 50%;
+}
+
+.landing_container .headingAndText .para {
+  font-size: clamp(0.85em, 2vw, 1em) !important;
+  color: var(--gray-color);
+  font-family: var(--p-font);
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.landing_container .headingAndText a {
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block;
+  margin: auto;
+}
+
+.landing_container .headingAndText .h3 {
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+  color: white;
+  background-color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+  font-size: clamp(0.75rem, 3vw, 1.25rem);
+  font-weight: lighter;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: "Oranienbaum", serif;
+}
+
+.landing_container .headingAndText .h3:hover {
+  color: #cfcfcf;
+  background-color: black;
+}
+
+.landing_container .down {
+  position: absolute;
+  left: 50vw;
+  border-radius: 50%;
+  border: 1px solid var(--gray-color);
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  .landing_container {
+    display: block;
+  }
+  .landing_container .imgAnime .session {
+    height: 50vh;
+  }
+}

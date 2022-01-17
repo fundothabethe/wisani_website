@@ -1,0 +1,101 @@
+.priceWrapper {
+  margin: 0 2vw;
+  padding-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.priceWrapper .headingText {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.priceWrapper .headingText .top,
+.priceWrapper .headingText .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.priceWrapper .headingText .top .h1,
+.priceWrapper .headingText .bottom .h1 {
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-family: "Prata", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.priceWrapper .headingText .top .line,
+.priceWrapper .headingText .bottom .line {
+  margin: 0 0.25rem;
+  height: 1px;
+  width: clamp(0.5rem, 0.5vw, 10.5rem);
+  background-color: var(--font-hover);
+}
+
+.priceWrapper .headingText .top .lineBtm,
+.priceWrapper .headingText .bottom .lineBtm {
+  margin: 0 0.25rem;
+  height: 1px;
+  width: clamp(2rem, 0.5vw, 10.5rem);
+  background-color: var(--font-hover);
+}
+
+.priceWrapper .priceText {
+  font-family: var(--p-font);
+  padding: 0.5rem;
+  font-size: clamp(0.85rem, 3vw, 1rem);
+}
+
+@media screen and (min-width: 800px) {
+  .priceWrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .priceWrapper .headingText {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .priceWrapper .priceText {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}

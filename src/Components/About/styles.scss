@@ -1,0 +1,137 @@
+.aboutContainer {
+  min-height: 90vh;
+  width: 100%;
+  padding-top: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .headingText {
+    margin-left: 5vw;
+    .top,
+    .bottom {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      .h1 {
+        margin-bottom: 0;
+        font-weight: lighter;
+        font-family: "Prata", sans-serif;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+      }
+      .line {
+        margin: 0 0.25rem;
+        height: 1px;
+        width: clamp(0.5rem, 0.5vw, 10.5rem);
+        background-color: var(--font-hover);
+      }
+      .lineBtm {
+        margin: 0 0.25rem;
+        height: 1px;
+        width: clamp(2rem, 0.5vw, 10.5rem);
+        background-color: var(--font-hover);
+      }
+    }
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5vw;
+
+    .picText {
+      cursor: pointer;
+      .ceoText {
+        text-align: center;
+        font-family: var(--white-font);
+      }
+      .extraHeading {
+        margin-top: 5vw;
+        margin-left: 0;
+        border: 1px solid black;
+        padding: 0.5rem;
+        width: fit-content;
+      }
+
+      .Pic {
+        width: clamp(10rem, 25vw, 20rem);
+      }
+      .text {
+        margin-top: 2rem;
+      }
+
+      .line2 {
+        margin: 0 0.25rem;
+        height: 1px;
+        width: clamp(3rem, 0.5vw, 5rem);
+        background-color: var(--font-hover);
+      }
+      .line12 {
+        margin: 0 0.25rem;
+        height: 1px;
+        width: clamp(1rem, 0.5vw, 1.5rem);
+        background-color: var(--font-hover);
+      }
+    }
+    .picText :hover {
+      border-color: var(--p-color);
+      .h1,
+      .lin {
+        color: var(--p-color);
+      }
+    }
+
+    .textOnly {
+      .para {
+        text-align: center;
+        font-size: clamp(0.75rem, 2.5vw, 1rem);
+        color: var(--p-color);
+        font-family: var(--p-font);
+        width: 100%;
+        margin: 1rem 0;
+        font-weight: lighter;
+      }
+      .lists {
+        margin: 0;
+        padding: 0;
+        .list {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          p {
+            margin: 0;
+            padding: 0;
+            font-size: clamp(0.75rem, 2.5vw, 1rem);
+            color: var(--p-color);
+            font-family: var(--p-font);
+            font-weight: bold;
+          }
+          .circle {
+            margin: 0 0.5rem;
+            display: block;
+            width: 5px;
+            height: 5px;
+            background-color: var(--p-color);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 550px) {
+    .contentWrapper {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 1rem;
+      .textOnly {
+        margin-left: 2vw;
+      }
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .contentWrapper {
+      margin: 5vw;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.testContainer {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  .testHeading {
+    text-align: center;
+    margin: 0 5vw;
+    margin-bottom: 0;
+    font-weight: lighter;
+    font-family: "Prata", sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  .testNext {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    transform: translateY(4rem);
+    justify-content: space-between;
+    cursor: pointer;
+    .prev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotateY(180deg);
+      margin: 0.5rem;
+      border-radius: 50%;
+      border: 1px solid var(--p-color);
+    }
+    .next {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.5rem;
+      border-radius: 50%;
+      border: 1px solid var(--p-color);
+    }
+  }
+  .rowFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .tests {
+      width: 100%;
+      padding: 1rem;
+      .content {
+        text-align: center;
+        font-style: italic;
+        font-size: clamp(0.85rem, 2.5vw, 1rem);
+        color: var(--p-color);
+        width: 100%;
+        margin: 1rem 0;
+      }
+      .testName {
+        text-align: center;
+        font-style: italic;
+        font-size: clamp(0.85rem, 2.5vw, 1rem);
+        color: rgba(224, 83, 182, 0.836);
+        width: 100%;
+        margin: 1rem 0;
+        font-weight: normal;
+      }
+      .testRelation {
+        text-align: center;
+        font-style: italic;
+        font-size: clamp(0.85rem, 2.5vw, 1rem);
+        font-weight: normal;
+        width: 100%;
+        color: var(--p-color);
+        margin: 1rem 0;
+      }
+    }
+    @media screen and (min-width: 700px) {
+      .tests {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        border: 1px solid var(--p-color);
+        width: 60%;
+      }
+    }
+  }
+
+  .testdots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .testdot {
+      border-radius: 50%;
+      background-color: var(--p-color);
+      margin: 0 0.25rem;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

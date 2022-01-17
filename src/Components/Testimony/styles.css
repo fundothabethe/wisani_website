@@ -1,0 +1,151 @@
+.testContainer {
+  min-height: 90vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.testContainer .testHeading {
+  text-align: center;
+  margin: 0 5vw;
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-family: "Prata", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.testContainer .testNext {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.testContainer .testNext .prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--p-color);
+}
+
+.testContainer .testNext .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--p-color);
+}
+
+.testContainer .rowFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testContainer .rowFlex .tests {
+  width: 100%;
+  padding: 1rem;
+}
+
+.testContainer .rowFlex .tests .content {
+  text-align: center;
+  font-style: italic;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  color: var(--p-color);
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.testContainer .rowFlex .tests .testName {
+  text-align: center;
+  font-style: italic;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  color: rgba(224, 83, 182, 0.836);
+  width: 100%;
+  margin: 1rem 0;
+  font-weight: normal;
+}
+
+.testContainer .rowFlex .tests .testRelation {
+  text-align: center;
+  font-style: italic;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  font-weight: normal;
+  width: 100%;
+  color: var(--p-color);
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 700px) {
+  .testContainer .rowFlex .tests {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    border: 1px solid var(--p-color);
+    width: 60%;
+  }
+}
+
+.testContainer .testdots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testContainer .testdots .testdot {
+  border-radius: 50%;
+  background-color: var(--p-color);
+  margin: 0 0.25rem;
+  width: 10px;
+  height: 10px;
+}

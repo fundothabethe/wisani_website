@@ -1,0 +1,45 @@
+.footer {
+  background: var(--landing-color);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .sitemap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      margin: 2rem 0;
+      width: clamp(5rem, 10vw, 10rem);
+    }
+    .siteInfo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .operating {
+        h3 {
+          text-align: center;
+          font-family: var(--p-font);
+          margin-bottom: 0;
+          font-weight: lighter;
+          font-size: clamp(1rem, 2.5vw, 1.5rem);
+        }
+        p {
+          font-size: clamp(0.75rem, 2.5vw, 1rem);
+          margin-bottom: 0.125rem;
+          color: var(--gray-color);
+        }
+      }
+    }
+  }
+  p {
+    text-align: center;
+    margin: 0;
+    font-family: var(--p-font);
+    color: var(--p-color);
+  }
+}

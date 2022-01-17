@@ -1,0 +1,249 @@
+.servicesContainer {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.servicesContainer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 5vw;
+}
+
+.servicesContainer .content .text {
+  margin-top: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 100%;
+}
+
+.servicesContainer .content .text .rowText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicesContainer .content .text .rowText .h1 {
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-family: "Prata", sans-serif;
+  font-size: clamp(1rem, 3vw, 2.5rem);
+}
+
+.servicesContainer .content .text .rowText .line {
+  height: 1px;
+  width: clamp(1rem, 2.5vw, 10.5rem);
+  background-color: var(--font-hover);
+}
+
+.servicesContainer .content .para {
+  text-align: center;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  color: var(--p-color);
+  font-family: var(--p-font);
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.servicesContainer .content .problemsText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 320px) {
+  .servicesContainer .content .problemsText .problems {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.servicesContainer .content .problemsText .problems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.servicesContainer .content .problemsText .problems .problemsList {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 130px;
+}
+
+.servicesContainer .content .problemsText .problems .problemsList .h3 {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.servicesContainer .content .problemsText .problems .problemsList .h3:hover {
+  color: #cfcfcf;
+  background-color: black;
+}
+
+.servicesContainer .content .problemsText .problems .stress1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicesContainer .content .problemsText .problems .stress1 .session1 {
+  width: 20vh;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 3rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+@media screen and (min-width: 300px) {
+  .servicesContainer .content .problemsText .problems .stress1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .servicesContainer .content .problemsText .problems .problemsList {
+    padding: 0 1%;
+  }
+}
+
+.servicesContainer .content .problemsText .boldText {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  font-family: "Rosarivo", serif;
+}
+
+@media screen and (min-width: 400px) {
+  .servicesContainer .content .problemsText .boldText {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .servicesContainer .content .problemsText {
+    display: block;
+    width: 100%;
+  }
+  .servicesContainer .content .problemsText .problem {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .servicesContainer .content .problemsText {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .servicesContainer .content .problemsText .problems {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .servicesContainer .content .problemsText .boldText {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.servicesContainer .stress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicesContainer .stress .session {
+  width: 20vh;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 3rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+@media screen and (max-width: 300px) {
+  .servicesContainer .stress {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .servicesContainer .stress {
+    margin-right: 10vh !important;
+  }
+  .servicesContainer .stress .session {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .servicesContainer .stress {
+    margin-right: 5vw;
+  }
+}

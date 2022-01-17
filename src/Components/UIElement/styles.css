@@ -1,0 +1,51 @@
+.extra {
+  margin-top: 5vw;
+  margin: auto;
+  padding: 0.25rem;
+  border: 1px solid black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.extra .h1 {
+  padding: 0 0.125rem;
+  font-weight: lighter;
+  font-family: "Prata", sans-serif;
+  font-size: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.extra .top2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.extra .top2 .line12 {
+  height: 1px;
+  width: clamp(2rem, 2vw, 5rem);
+  background-color: var(--font-hover);
+}
+
+.extra .top2 .line13 {
+  margin: 0 0.25rem;
+  height: 1px;
+  width: clamp(2rem, 2vw, 5rem);
+  background-color: var(--font-hover);
+}
+
+@media screen and (min-width: 700px) {
+  .lunk {
+    margin-right: 5vw;
+  }
+  .self {
+    margin: 0 auto;
+  }
+}
